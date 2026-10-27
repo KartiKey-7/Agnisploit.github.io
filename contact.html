@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#070910">
+    <meta name="description"
+        content="Agnisploit cybersecurity learning, ethical hacking courses, security tool guides and career pathways.">
+    <title>Contact Agnisploit</title>
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap nav"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="Om">
+                <div>AGNI<span>SPLOIT</span><small>CYBER SECURITY · ETHICAL HACKING</small></div>
+            </a><button class="toggle" aria-label="Toggle menu">☰</button>
+            <nav class="links"><a href="index.html">Home</a><a href="courses.html">Courses</a><a
+                    href="career.html">Career</a><a href="tools.html">Tools</a><a href="contact.html"
+                    class="active">Contact Us</a><a href="join.html">Join Now</a><a href="download.html">Download
+                    App</a></nav>
+            <div class="actions"><a class="btn outline" href="login.html">Login</a><a class="btn primary"
+                    href="join.html">Join Now ↗</a></div>
+        </div>
+    </header>
+    <main>
+        <section class="wrap pagehero"><span class="eyebrow">Contact the team</span>
+            <h1>Let's start a <span>conversation.</span></h1>
+            <p>Ask about courses, partnerships, workshops or learning pathways. The form prepares an email draft for you
+                to review and send.</p>
+        </section>
+        <section class="section">
+            <div class="wrap grid two">
+                <article class="card">
+                    <h2>Leadership</h2>
+                    <div class="profile">
+                <img
+                    src="assets/kartikey.jpeg"
+                    alt="Kartikey Agnihotri - Co-Founder"
+                    class="avatar profile-photo"
+                >
+                <div>
+                    <h3>Kartikey Agnihotri</h3>
+                    <small>Co-Founder</small>
+
+                    <p class="phone-number">
+                        ☎ <a href="tel:+918791272877">+91 87912 72877</a>
+                    </p>
+
+                    <p class="muted">Cybersecurity Learning & Development</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img
+                    src="assets/aman.jpeg"
+                    alt="Aman Pratap Singh - CEO"
+                    class="avatar profile-photo"
+                >
+                <div>
+                    <h3>Aman Pratap Singh</h3>
+                    <small>CEO</small>
+
+                    <p class="phone-number">
+                        ☎ <a href="tel:+917906943138">+91 79069 43138</a>
+                    </p>
+
+                    <p class="muted">Cyber Security Instructor</p>
+                </div>
+                    </div>
+                    <p class="muted">Initials are placeholders; replace with approved portraits when ready.</p><a
+                        class="btn" href="mailto:agnisploit@gmail.com">agnisploit@gmail.com</a>
+                </article>
+                <article class="card">
+                    <h2>Send a message</h2>
+                    <form id="contactForm" class="formgrid">
+                        <div class="field"><label for="name">Your name</label><input id="name" name="name" required>
+                        </div>
+                        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"
+                                required></div>
+                        <div class="field full"><label for="topic">Topic</label><select id="topic" name="topic">
+                                <option>Course enquiry</option>
+                                <option>Workshop or partnership</option>
+                                <option>General question</option>
+                            </select></div>
+                        <div class="field full"><label for="message">Message</label><textarea id="message"
+                                name="message" required></textarea></div>
+                        <div class="field full"><button class="btn primary" type="submit">Prepare message ↗</button>
+                            <p id="status" class="notice">Opens your email app; it does not silently send data.</p>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap foot">
+            <div><b>AGNI<span style="color:var(--orange)">SPLOIT</span></b>
+                <div class="fine">Learn responsibly. Test with permission. Build securely.</div>
+            </div>
+            <div class="footlinks"><a href="courses.html">Courses</a><a href="tools.html">Tools</a><a
+                    href="contact.html">Contact</a><a href="login.html">Login</a></div><span class="fine">© <span
+                    id="year">2026</span> Agnisploit</span>
+        </div>
+    </footer>
+    <script>document.querySelector('.toggle')?.addEventListener('click', () => document.querySelector('.links').classList.toggle('open')); document.getElementById('year').textContent = new Date().getFullYear(); const f = document.getElementById('contactForm'); if (f) f.addEventListener('submit', e => { e.preventDefault(); const d = new FormData(f); const sub = encodeURIComponent('Agnisploit enquiry: ' + d.get('topic')); const b = encodeURIComponent('Name: ' + d.get('name') + '\nEmail: ' + d.get('email') + '\nTopic: ' + d.get('topic') + '\n\n' + d.get('message')); document.getElementById('status').textContent = 'Review the email draft and press Send.'; location.href = 'mailto:agnisploit@gmail.com?subject=' + sub + '&body=' + b })</script>
+</body>
+
+</html>
